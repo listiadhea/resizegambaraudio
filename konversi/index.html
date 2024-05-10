@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Audio Processor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image and Audio Processor</h1>
+
+        <h2>Image Processing</h2>
+        <input type="file" accept="image/*" id="imgInput">
+        <button onclick="resizeImage()">Resize Image</button>
+        <br>
+        <img id="previewImage" src="" alt="Preview" class="preview">
+
+        <h2>Audio Processing</h2>
+        <input type="file" accept="audio/*" id="audioInput">
+        <button onclick="compressAudio()">Compress Audio</button>
+        <audio controls id="previewAudio" class="preview"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
